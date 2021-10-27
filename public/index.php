@@ -1,18 +1,17 @@
 <?php
-require '../vendor/autoload.php';
+require'../vendor/autoload.php';
 use \Demo\HelloWorld as World;
 use Demo\Hello\Lara;
 use Demo\Hello;
-$world = new World();
-$lara= new Lara();
-$vincent= new Hello\Someone('Vincent');
-
+$world=new World();
+$lara=new Lara();
+$vincent=new Hello\Someone('Vincent');
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
 // create a log channel
-$log = new Logger('name');
+$log=new Logger('name');
 $log->pushHandler(new StreamHandler('../log/your.log', Logger::WARNING));
 
 // add records to the log
