@@ -1,6 +1,6 @@
 <?php
 namespace Demo;
-class HelooWorld
+class HelloWorld
 {
     function_construct(){
         echo 'Hello World~'.PHP_EOL;
